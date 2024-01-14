@@ -1,0 +1,28 @@
+{
+  "annotations": {
+    "changelogDate": "20240114182818"
+  },
+  "dto": "no",
+  "entityTableName": "product",
+  "fields": [
+    {
+      "fieldName": "bookTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bookPrice",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "bookQuantity",
+      "fieldType": "Integer"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Product",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

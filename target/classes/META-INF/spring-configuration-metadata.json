@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "application",
+      "type": "testapp.config.ApplicationProperties",
+      "sourceType": "testapp.config.ApplicationProperties"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
