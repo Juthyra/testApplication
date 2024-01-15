@@ -78,7 +78,7 @@ export const ProductUpdate = () => {
       <Row className="justify-content-center">
         <Col md="8">
           <h2 id="testApplicationApp.product.home.createOrEditLabel" data-cy="ProductCreateUpdateHeading">
-            Create or edit a Product
+            Product
           </h2>
         </Col>
       </Row>
@@ -89,8 +89,8 @@ export const ProductUpdate = () => {
           ) : (
             <ValidatedForm defaultValues={defaultValues()} onSubmit={saveEntity}>
               {!isNew ? <ValidatedField name="id" required readOnly id="product-id" label="ID" validate={{ required: true }} /> : null}
-              <ValidatedField label="Book Title" id="product-bookTitle" name="bookTitle" data-cy="bookTitle" type="text" />
-              <ValidatedField label="Book Price" id="product-bookPrice" name="bookPrice" data-cy="bookPrice" type="text" />
+              <ValidatedField required label="Book Title" id="product-bookTitle" name="bookTitle" data-cy="bookTitle" type="text" />
+              <ValidatedField required label="Book Price" id="product-bookPrice" name="bookPrice" data-cy="bookPrice" type="text" />
               <ValidatedField label="Book Quantity" id="product-bookQuantity" name="bookQuantity" data-cy="bookQuantity" type="text" />
               <Button tag={Link} id="cancel-save" data-cy="entityCreateCancelButton" to="/product" replace color="info">
                 <FontAwesomeIcon icon="arrow-left" />

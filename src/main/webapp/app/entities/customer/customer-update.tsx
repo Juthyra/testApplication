@@ -75,7 +75,7 @@ export const CustomerUpdate = () => {
       <Row className="justify-content-center">
         <Col md="8">
           <h2 id="testApplicationApp.customer.home.createOrEditLabel" data-cy="CustomerCreateUpdateHeading">
-            Create or edit a Customer
+            Customer {customerEntity && customerEntity?.firstName}
           </h2>
         </Col>
       </Row>
@@ -86,9 +86,9 @@ export const CustomerUpdate = () => {
           ) : (
             <ValidatedForm defaultValues={defaultValues()} onSubmit={saveEntity}>
               {!isNew ? <ValidatedField name="id" required readOnly id="customer-id" label="ID" validate={{ required: true }} /> : null}
-              <ValidatedField label="First Name" id="customer-firstName" name="firstName" data-cy="firstName" type="text" />
+              <ValidatedField required label="First Name" id="customer-firstName" name="firstName" data-cy="firstName" type="text" />
               <ValidatedField label="Last Name" id="customer-lastName" name="lastName" data-cy="lastName" type="text" />
-              <ValidatedField label="Email" id="customer-email" name="email" data-cy="email" type="text" />
+              <ValidatedField required label="Email" id="customer-email" name="email" data-cy="email" type="text" />
               <ValidatedField label="Family Member" id="customer-familyMember" name="familyMember" data-cy="familyMember" type="text" />
               <Button tag={Link} id="cancel-save" data-cy="entityCreateCancelButton" to="/customer" replace color="info">
                 <FontAwesomeIcon icon="arrow-left" />
