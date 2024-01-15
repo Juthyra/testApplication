@@ -1,6 +1,7 @@
 package testapp.domain;
 
 import java.io.Serializable;
+import jakarta.validation.constraints.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
@@ -19,12 +20,14 @@ public class Customer implements Serializable {
     private Long id;
 
     @Column("first_name")
+    @NotNull(message = "first name must not be null")
     private String firstName;
 
     @Column("last_name")
     private String lastName;
 
     @Column("email")
+    @NotNull(message = "email must not be null")
     private String email;
 
     @Column("family_member")
