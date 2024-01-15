@@ -2,6 +2,16 @@
 
 This application was generated using JHipster 8.1.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.1.0](https://www.jhipster.tech/documentation-archive/v8.1.0).
 
+## Project Information
+-    java_version:17.0.9
+-    db:MySQL
+-    redis_version:7.2.4
+-    spring_boot_version:3.2.0
+-    maven_version:3.2.5
+-    node_version:v18.18.2
+-    npm_version:10.2.4
+-    liquibase.version:4.24.0
+
 ## Project Structure
 
 Node is required for generation and recommended for development. `package.json` is always generated for a better development experience with prettier, commit hooks, scripts and so on.
